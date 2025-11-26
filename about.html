@@ -4,137 +4,34 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Scarab Medical — About Us</title>
-  <style>
-    :root{
-      --bg:#f7f9fb;
-      --card:#ffffff;
-      --ink:#0a1a33;
-      --muted:#5f6b7a;
-      --accent-1:linear-gradient(120deg,#1e6fdb 0%,#2bb673 100%);
-      --accent-2:linear-gradient(120deg,#0f4c81 0%,#5aa9d8 100%);
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
-
-    header{background:var(--accent-2);color:white;padding:60px 20px;text-align:center}
-    header h1{font-size:40px;font-weight:700;margin-bottom:10px}
-    header p{font-size:17px;opacity:0.9}
-
-    nav{display:flex;justify-content:center;gap:28px;background:white;padding:16px 0;border-bottom:1px solid #e6eaf0}
-    nav a{text-decoration:none;color:#0f4c81;font-weight:700;font-size:15px}
-
-    main{max-width:1100px;margin:50px auto;padding:0 20px}
-    .card{background:white;padding:28px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #e8eef4;margin-bottom:40px}
-
-    h2{font-size:30px;margin-bottom:14px;color:#0f4c81}
-    h3{font-size:22px;margin:18px 0 10px;color:#0a1a33}
-    p{line-height:1.7;color:var(--muted);margin-bottom:16px;font-size:16px}
-    ul{color:var(--muted);margin-left:22px;margin-bottom:18px}
-
-    .value-block{padding:18px;background:linear-gradient(180deg,#fbfdff,#f4faff);border-radius:12px;border:1px solid #eef3f6;margin-bottom:14px}
-    .value-block strong{color:#0f4c81;font-size:16px}
-
-    footer{text-align:center;margin-top:50px;padding:28px 0;color:var(--muted)}
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <h1>About Scarab Medical</h1>
-  <p>Pioneering implantable sensing for early physiological deterioration detection</p>
+<header class="site-hero">
+  <div class="brand">
+    <div class="title">
+      <div class="company">Scarab Medical</div>
+      <div class="tag">Pioneering implantable sensing for early physiological deterioration detection</div>
+    </div>
+    <nav class="primary" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="#mission">Mission</a>
+      <a href="#vision">Vision</a>
+      <a href="#values">Our Values</a>
+    </nav>
+  </div>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="#mission">Mission</a>
-  <a href="#vision">Vision</a>
-  <a href="#values">Our Values</a>
-</nav>
-
-<main>
+<main class="container">
 
   <section id="mission" class="card">
     <h2>Our Mission</h2>
-    <p>
-      Scarab Medical exists to bridge the gap between non-invasive consumer wearables and
-      high-burden clinical monitoring. Our mission is to deliver small, durable, truly
-      patient-friendly implantable sensors that detect early physiological deterioration — long
-      before symptoms appear.
-    </p>
-    <p>
-      By focusing on high-value biomarkers such as hemodynamics, metabolic stress indicators,
-      infection biomarkers, and orthopedic healing signals, we aim to support clinicians with
-      actionable insights that improve outcomes, reduce hospitalisations, and enable safer
-      long-term monitoring.
-    </p>
+    <p>Scarab Medical exists to bridge the gap between non-invasive consumer wearables and high-burden clinical monitoring. Our mission is to deliver small, durable, truly patient-friendly implantable sensors that detect early physiological deterioration — long before symptoms appear.</p>
+    <p>By focusing on high-value biomarkers such as hemodynamics, metabolic stress indicators, infection biomarkers, and orthopedic healing signals, we aim to support clinicians with actionable insights that improve outcomes, reduce hospitalisations, and enable safer long-term monitoring.</p>
   </section>
-
 
   <section id="vision" class="card">
     <h2>Our Vision</h2>
-    <p>
-      We envision a healthcare ecosystem where continuous internal monitoring is safe,
-      invisible, low-burden, and seamlessly integrated into clinical workflows. Our "Smart
-      Sub-Q Dot" platform is designed to become the foundation for next-generation early
-      warning systems — empowering both patients and clinicians.
-    </p>
-    <p>
-      As the world shifts from episodic care to continuous, personalized health insights,
-      Scarab Medical aims to lead the movement toward proactive, data-driven prevention.
-    </p>
-  </section>
-
-
-  <section id="values" class="card">
-    <h2>Our Core Values</h2>
-
-    <div class="value-block">
-      <strong>Patient-First Engineering</strong>
-      <p>
-        Devices must be easy, comfortable, and require no daily upkeep. A sensor that patients
-        forget about is one they will accept.
-      </p>
-    </div>
-
-    <div class="value-block">
-      <strong>Clinical Relevance Over Complexity</strong>
-      <p>
-        We prioritise measuring only a few deeply meaningful signals — the ones clinicians say
-        matter most for predicting deterioration.
-      </p>
-    </div>
-
-    <div class="value-block">
-      <strong>Validated Science</strong>
-      <p>
-        Every metric we deliver is tested against rigorous clinical benchmarks to ensure
-        reliability, reproducibility, and trust.
-      </p>
-    </div>
-
-    <div class="value-block">
-      <strong>Workflow Integration</strong>
-      <p>
-        A sensor is only useful if clinicians can easily act on its insights. Our system is
-        designed for seamless EHR integration and clear alerting.
-      </p>
-    </div>
-
-    <div class="value-block">
-      <strong>Ethical AI & Secure Data</strong>
-      <p>
-        Patient data is encrypted end-to-end, and our algorithms are built to reduce alert
-        fatigue while maintaining transparency and safety.
-      </p>
-    </div>
-
-  </section>
-
-</main>
-
-<footer>
-  © 2025 Scarab Medical — All rights reserved.
-</footer>
-
-</body>
-</html>
+    <p>We envision a healthcare ecosystem where continuous internal monitoring is safe, invisible, low-burden, and seamlessly integrated into clinical workflows. Our "Smart Sub-Q Dot" platform is designed to become the foundation for next-generation early warning systems — empowering both patients and clinicians.</p>
+    <p>As the world shifts from episodic care to continuous, personalized health insights, Scarab Medical aims to lead the movement toward proactive
