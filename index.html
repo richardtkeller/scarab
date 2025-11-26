@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!doctype html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;Scarab Medical — Smart Sub-Q Dot&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Elegant, Roche-like visual language: calm gradients, generous spacing, readable typography */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>:root{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--bg:#fbfbfc;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--card:#ffffff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--ink:#0b1220;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--muted:#6b7280;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--accent-1:linear-gradient(120deg,#1e6fdb 0%,#2bb673 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--accent-2:linear-gradient(120deg,#0f4c81 0%,#5aa9d8 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--glass: rgba(255,255,255,0.7);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--radius:14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>*{box-sizing:border-box}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>html,body{height:100%;margin:0;background:var(--bg);font-family:Inter,system-ui,-apple-system,'Helvetica Neue',Arial}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>header.site-hero{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background:var(--accent-2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color:var(--card);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding:48px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.brand{max-width:1100px;width:100%;display:flex;align-items:center;justify-content:space-between;margin:0 auto}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.brand .title{font-family:'Georgia',serif;font-size:28px;letter-spacing:0.6px;color:#032;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display:flex;flex-direction:column}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.brand .title .company{font-weight:700;color:#001529;font-size:28px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.brand .title .tag{font-size:14px;color:rgba(255,255,255,0.9);margin-top:6px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>nav.primary{display:flex;gap:18px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>nav.primary a{color:rgba(255,255,255,0.92);text-decoration:none;font-weight:600}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>main.container{max-width:1100px;margin:40px auto;padding:0 20px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.grid{display:grid;grid-template-columns:1fr 380px;gap:28px}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* About card */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.card{background:var(--card);border-radius:12px;padding:24px;box-shadow:0 10px 30px rgba(10,20,30,0.06);border:1px solid #eef3f6}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>h1.h{font-family:'Georgia',serif;margin:0 0 12px;font-size:26px;color:var(--ink)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>p.lead{color:var(--muted);margin:0 0 14px;line-height:1.6}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Feature list */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.feature{background:linear-gradient(180deg,#fbfdff,#f6fbff);padding:12px;border-radius:10px;border:1px solid #f0f6fb}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.feature h4{margin:0;color:#062234;font-size:15px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.feature p{margin:6px 0 0;color:var(--muted);font-size:13px}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Sidebar */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.side .kicker{font-size:12px;color:var(--muted);margin-bottom:10px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.side .cta{display:flex;flex-direction:column;gap:10px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent-1);color:white;text-decoration:none;font-weight:700}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Sensor section */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>section.sensor{margin-top:28px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.sensor-grid{display:grid;grid-template-columns:1fr 360px;gap:24px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.sensor-figure{border-radius:12px;overflow:hidden;border:1px solid #eef3f6}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.sensor-figure img{display:block;width:100%;height:100%;object-fit:cover}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Technology */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.tech-list{display:grid;gap:12px}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.tech-item{display:flex;gap:12px;align-items:flex-start}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.dot{width:10px;height:10px;border-radius:50%;background:#1e6fdb;margin-top:6px}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Footer */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>footer{max-width:1100px;margin:40px auto;padding:24px 20px;color:var(--muted);font-size:14px}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Responsive */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@media (max-width:980px){.grid{grid-template-columns:1fr}.sensor-grid{grid-template-columns:1fr}.brand{flex-direction:column;align-items:center}.nav{margin-top:10px}}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;header class="site-hero"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="brand"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="title"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="company"&gt;Scarab Medical&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="tag"&gt;Smart Sub-Q Dot — clinical-grade implantable sensing&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;nav class="primary" aria-label="Primary"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="index.html#about"&gt;About Us&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="index.html#sensor"&gt;About the Sensor&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="index.html#technology"&gt;Technology&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="index.html#contact"&gt;Contact&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;main class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Two column intro --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1 class="h"&gt;Why Scarab Medical?&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="lead"&gt;Scarab Medical develops clinical-grade implantable sensors that capture the data clinicians need — not just consumer trackers. Our Smart Sub-Q Dot is designed to deliver continuous, reliable physiological signals that fit into routine clinical workflows and support early detection of deterioration.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="features"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="feature"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h4&gt;Set-and-Forget Design&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Office-based implantation, years of life, no charging or daily maintenance.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="feature"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h4&gt;Clinical-grade Signals&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Built for accuracy, validation and integration into clinician dashboards and EHR.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="feature"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h4&gt;Patient-first&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;No visible bump, MRI-conditional design, minimal lifestyle impact.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="feature"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h4&gt;Actionable Alerts&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Pattern-based alerts for clinicians — designed to reduce alert fatigue.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="about" style="margin-top:20px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h2 style="font-family:'Georgia',serif;color:var(--ink);margin-top:10px"&gt;About Us — Scarab Medical&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p style="color:var(--muted)"&gt;Scarab Medical is a medtech company focused on delivering validated implantable sensing solutions that address major clinical needs: heart failure decompensation, metabolic instability, infection detection, and post-op monitoring. We combine hardware miniaturisation, robust in-vivo calibration strategies and clinically validated algorithms to ensure relevant, trustworthy data reaches clinicians when it matters.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;aside class="card side"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="kicker"&gt;Trusted by clinicians • Designed for patients&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div style="font-size:18px;font-weight:700;color:var(--ink);margin-bottom:8px"&gt;Clinical applications&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul style="color:var(--muted);margin:0 0 14px 18px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Heart failure management&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Perioperative monitoring&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;High-risk diabetes programmes&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Orthopaedic implant surveillance&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="cta"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;a class="btn" href="index.html#contact"&gt;Request a Consultation&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;a style="text-decoration:none;color:var(--muted);font-weight:600" href="index.html#technology"&gt;Download whitepaper (coming)&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/aside&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Sensor details --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="sensor" class="sensor"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card sensor-grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h2 style="font-family:'Georgia',serif;color:var(--ink)"&gt;About the Sensor&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p style="color:var(--muted)"&gt;The Smart Sub-Q Dot is a tiny, rice-grain-sized implant designed to measure 2–3 high-value physiological signals continuously. It can be configured for cardiopulmonary, metabolic, or ortho/post-op use and transmits securely to a patient phone and clinician dashboard.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3 style="margin-top:12px;margin-bottom:6px;color:#112"&gt;Why this approach?&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;ul style="color:var(--muted);margin-left:18px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;Low patient burden:&lt;/strong&gt; no charging, no daily interaction.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;Clinical value:&lt;/strong&gt; measures signals non-capturable by wearables (local tissue oxygenation, intracardiac trends, local biomarkers).&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;Workflow friendly:&lt;/strong&gt; integrates into clinician dashboards and EHR via secure APIs.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3 style="margin-top:12px;color:#112"&gt;Typical configurations&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div style="display:grid;gap:10px;margin-top:8px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="card" style="padding:12px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;strong&gt;Cardiopulmonary&lt;/strong&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div style="color:var(--muted);font-size:14px"&gt;StO₂ (local tissue oxygenation), local temperature, HR/HRV trends — early detection of HF decompensation and respiratory infections.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="card" style="padding:12px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;strong&gt;Metabolic&lt;/strong&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div style="color:var(--muted);font-size:14px"&gt;Continuous glucose ± lactate and pH — early metabolic instability and sepsis risk signalling.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="card" style="padding:12px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;strong&gt;Ortho / Post-Op&lt;/strong&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div style="color:var(--muted);font-size:14px"&gt;Local temperature, pH, mechanical strain — early prosthetic infection and healing assessment.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;figure class="sensor-figure"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;!-- developer-provided image path; update path if deploying elsewhere --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;img src="/mnt/data/7c7ffa83-825b-4a7b-9dbd-0e303599df8d.png" alt="Scarab Smart SubQ Dot concept" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/figure&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Technology --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="technology" style="margin-top:26px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 style="font-family:'Georgia',serif;color:var(--ink)"&gt;The Technology&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="color:var(--muted)"&gt;Scarab Medical combines miniaturised sensing, robust in-vivo calibration, and lightweight on-device signal processing to deliver clinically meaningful metrics with minimal patient burden.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="tech-list" style="margin-top:12px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="tech-item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="dot" aria-hidden&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;strong&gt;Validated sensing&lt;/strong&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div style="color:var(--muted);margin-top:6px"&gt;Sensors and algorithms are validated against clinical gold standards to ensure reproducibility across patients and environments.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="tech-item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="dot" aria-hidden&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;strong&gt;Energy options&lt;/strong&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div style="color:var(--muted);margin-top:6px"&gt;Energy harvesting or micro-battery designs provide multi-year lifespan without patient interaction.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="tech-item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="dot" aria-hidden&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;strong&gt;Secure connectivity&lt;/strong&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div style="color:var(--muted);margin-top:6px"&gt;End-to-end encryption from device → phone → cloud; designed for HIPAA / GDPR-aligned workflows.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="tech-item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="dot" aria-hidden&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;strong&gt;Clinical analytics&lt;/strong&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div style="color:var(--muted);margin-top:6px"&gt;Lightweight on-device and cloud models detect trends and reduce false alerts through pattern recognition and clinician feedback loops.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;hr style="margin:20px 0;border:none;border-top:1px solid #eef3f6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 style="margin:0 0 8px;color:#112"&gt;Patient-friendly design principles&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul style="color:var(--muted);margin-left:18px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Minimise procedures: office-based implant, &lt;em&gt;set-and-forget&lt;/em&gt;.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Invisible: no visible hardware; MRI conditional.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;Clinically actionable: only send alerts when patterns indicate true risk.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Contact --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="contact" style="margin-top:26px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 style="font-family:'Georgia',serif;color:var(--ink)"&gt;Contact&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="color:var(--muted)"&gt;For partnership inquiries, clinical collaborations or product information, please use the contact form below. (We purposely omit direct email on public pages to minimise spam.)&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div style="margin-top:18px"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;!-- Placeholder — organisation can embed Google Form or contact widget here --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div style="padding:18px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfcff);border:1px solid #eef5fb"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;strong style="display:block;margin-bottom:8px;color:#022"&gt;Request a consultation&lt;/strong&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p style="color:var(--muted);margin:0 0 8px"&gt;Click below to open our secure consultation form.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a class="btn" href="#"&gt;Open consultation form&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div style="max-width:1100px;margin:0 auto;padding:10px 20px;text-align:center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div style="color:var(--muted)"&gt;© 2025 Scarab Medical — All rights reserved.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
