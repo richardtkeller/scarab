@@ -4,74 +4,35 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Scarab Medical — Sensor</title>
-  <style>
-    :root{
-      --bg:#f7f9fb;
-      --card:#ffffff;
-      --ink:#0a1a33;
-      --muted:#5f6b7a;
-      --accent-1:linear-gradient(120deg,#1e6fdb 0%,#2bb673 100%);
-      --accent-2:linear-gradient(120deg,#0f4c81 0%,#5aa9d8 100%);
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
-
-    header{background:var(--accent-2);color:white;padding:50px 20px;text-align:center}
-    header h1{font-size:34px;font-weight:700;margin-bottom:8px}
-    header p{opacity:0.9;font-size:16px}
-
-    nav{display:flex;justify-content:center;gap:26px;background:white;padding:14px 0;border-bottom:1px solid #e6eaf0}
-    nav a{text-decoration:none;color:#0f4c81;font-weight:700;font-size:15px}
-
-    main{max-width:1100px;margin:40px auto;padding:0 20px}
-    .card{background:white;padding:26px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.06);border:1px solid #e8eef4;margin-bottom:40px}
-
-    h2{font-size:28px;margin-bottom:16px;color:#0f4c81}
-    p{line-height:1.7;color:var(--muted);margin-bottom:16px;font-size:16px}
-    ul{color:var(--muted);margin-left:22px;margin-bottom:18px}
-
-    .sensor-layout{display:grid;grid-template-columns:1fr 380px;gap:28px;margin-top:20px}
-    .sensor-layout img{width:100%;border-radius:14px;border:1px solid #e8eef4}
-
-    .config-card{padding:16px;border-radius:12px;background:linear-gradient(180deg,#fbfdff,#f4faff);border:1px solid #eef3f6;margin-bottom:14px}
-    .config-card strong{color:#0f4c81;font-size:16px}
-
-    footer{text-align:center;margin-top:50px;padding:28px 0;color:var(--muted)}
-    @media(max-width:900px){.sensor-layout{grid-template-columns:1fr}}
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <h1>Smart Sub-Q Dot — Sensor Overview</h1>
-  <p>Clinical-grade implantable microsensor for early physiological deterioration detection</p>
+<header class="site-hero">
+  <div class="brand">
+    <div class="title">
+      <div class="company">Smart Sub-Q Dot</div>
+      <div class="tag">Clinical-grade implantable microsensor for early physiological deterioration detection</div>
+    </div>
+    <nav class="primary" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="#overview">Overview</a>
+      <a href="#configs">Sensor Configurations</a>
+      <a href="#workflow">Data Workflow</a>
+    </nav>
+  </div>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="#overview">Overview</a>
-  <a href="#configs">Sensor Configurations</a>
-  <a href="#workflow">Data Workflow</a>
-</nav>
-
-<main>
+<main class="container">
 
   <section id="overview" class="card">
     <h2>What is the Smart Sub-Q Dot?</h2>
-    <p>
-      The Smart Sub-Q Dot is a fully implantable, rice-grain–sized microsensor designed for
-      continuous, high-value physiological monitoring. Unlike wearables, it captures internal
-      biomarkers that provide much earlier warning of clinical deterioration.
-    </p>
-    <p>
-      Implanted in a simple 5–10 minute office procedure, it requires zero patient maintenance:
-      no charging, no dressings, and no calibration. It integrates seamlessly with clinician
-      dashboards and EHR systems.
-    </p>
+    <p>The Smart Sub-Q Dot is a fully implantable, rice-grain–sized microsensor designed for continuous, high-value physiological monitoring. Unlike wearables, it captures internal biomarkers that provide much earlier warning of clinical deterioration.</p>
+    <p>Implanted in a simple 5–10 minute office procedure, it requires zero patient maintenance: no charging, no dressings, and no calibration. It integrates seamlessly with clinician dashboards and EHR systems.</p>
 
     <div class="sensor-layout">
       <div>
-        <h3 style="color:#0a1a33;margin-bottom:10px">Key Advantages</h3>
+        <h3>Key Advantages</h3>
         <ul>
           <li>Implant-and-forget simplicity</li>
           <li>Multi-year lifespan</li>
@@ -80,11 +41,9 @@
           <li>No lifestyle restrictions; MRI-conditional</li>
         </ul>
       </div>
-
       <img src="/mnt/data/7c7ffa83-825b-4a7b-9dbd-0e303599df8d.png" alt="Scarab Sub-Q Dot Sensor" />
     </div>
   </section>
-
 
   <section id="configs" class="card">
     <h2>Available Sensor Configurations</h2>
@@ -106,7 +65,6 @@
     </div>
   </section>
 
-
   <section id="workflow" class="card">
     <h2>How the System Works</h2>
     <p>The Smart Sub-Q Dot is designed for effortless clinical adoption.</p>
@@ -118,13 +76,14 @@
       <li>Clinicians receive processed trends, alerts, and longitudinal insights.</li>
       <li>No patient interaction is required unless an alert is generated.</li>
     </ul>
-
   </section>
 
 </main>
 
 <footer>
-  © 2025 Scarab Medical — All rights reserved.
+  <div class="footer-inner">
+    © 2025 Scarab Medical — All rights reserved.
+  </div>
 </footer>
 
 </body>
