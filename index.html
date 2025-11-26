@@ -5,253 +5,90 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Scarab Medical — Smart Sub-Q Dot</title>
   <style>
-    /* Elegant visual language: calm gradients, generous spacing, readable typography */
     :root{
-      --bg:#fbfbfc;
-      --card:#ffffff;
-      --ink:#0b1220;
-      --muted:#6b7280;
+      --bg:#fbfbfc; --card:#ffffff; --ink:#0b1220; --muted:#6b7280;
       --accent-1:linear-gradient(120deg,#1e6fdb 0%,#2bb673 100%);
       --accent-2:linear-gradient(120deg,#0f4c81 0%,#5aa9d8 100%);
-      --glass: rgba(255,255,255,0.7);
       --radius:14px;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:var(--bg);font-family:Inter,system-ui,-apple-system,'Helvetica Neue',Arial}
-
-    header.site-hero{
-      background:var(--accent-2);
-      color:var(--card);
-      padding:48px 20px;
-      display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:center;
-    }
-    .brand{max-width:1100px;width:100%;display:flex;align-items:center;justify-content:space-between;margin:0 auto}
-    .brand .title{font-family:'Georgia',serif;font-size:28px;letter-spacing:0.6px;color:#032;
-      display:flex;flex-direction:column}
-    .brand .title .company{font-weight:700;color:#001529;font-size:28px}
-    .brand .title .tag{font-size:14px;color:rgba(255,255,255,0.9);margin-top:6px}
-    nav.primary{display:flex;gap:18px}
-    nav.primary a{color:rgba(255,255,255,0.92);text-decoration:none;font-weight:600}
-
-    main.container{max-width:1100px;margin:40px auto;padding:0 20px}
-    .grid{display:grid;grid-template-columns:1fr 380px;gap:28px}
-
-    /* About card */
-    .card{background:var(--card);border-radius:12px;padding:24px;box-shadow:0 10px 30px rgba(10,20,30,0.06);border:1px solid #eef3f6}
-    h1.h{font-family:'Georgia',serif;margin:0 0 12px;font-size:26px;color:var(--ink)}
-    p.lead{color:var(--muted);margin:0 0 14px;line-height:1.6}
-
-    /* Feature list */
-    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
-    .feature{background:linear-gradient(180deg,#fbfdff,#f6fbff);padding:12px;border-radius:10px;border:1px solid #f0f6fb}
-    .feature h4{margin:0;color:#062234;font-size:15px}
-    .feature p{margin:6px 0 0;color:var(--muted);font-size:13px}
-
-    /* Sidebar */
-    .side .kicker{font-size:12px;color:var(--muted);margin-bottom:10px}
-    .side .cta{display:flex;flex-direction:column;gap:10px}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent-1);color:white;text-decoration:none;font-weight:700}
-
-    /* Sensor section */
-    section.sensor{margin-top:28px}
-    .sensor-grid{display:grid;grid-template-columns:1fr 360px;gap:24px}
-    .sensor-figure{border-radius:12px;overflow:hidden;border:1px solid #eef3f6}
-    .sensor-figure img{display:block;width:100%;height:100%;object-fit:cover}
-
-    /* Technology */
-    .tech-list{display:grid;gap:12px}
-    .tech-item{display:flex;gap:12px;align-items:flex-start}
-    .dot{width:10px;height:10px;border-radius:50%;background:#1e6fdb;margin-top:6px}
-
-    /* Footer */
-    footer{max-width:1100px;margin:40px auto;padding:24px 20px;color:var(--muted);font-size:14px}
-
-    /* Responsive */
-    @media (max-width:980px){.grid{grid-template-columns:1fr}.sensor-grid{grid-template-columns:1fr}.brand{flex-direction:column;align-items:center}.nav{margin-top:10px}}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--ink)}
+    header.site-hero{background:var(--accent-2);color:white;padding:48px 20px;text-align:center}
+    nav.primary{margin-top:12px;display:flex;justify-content:center;gap:22px}
+    nav.primary a{color:white;text-decoration:none;font-weight:600}
+    main{max-width:1100px;margin:40px auto;padding:0 20px}
+    .card{background:white;border-radius:var(--radius);padding:24px;box-shadow:0 10px 30px rgba(0,0,0,0.06);margin-bottom:32px;border:1px solid #eef3f6}
+    h1,h2,h3{font-family:'Georgia',serif}
+    h2{margin-bottom:10px}
+    .link-list a{display:block;margin:6px 0;color:#0f4c81;font-weight:600;text-decoration:none}
+    .link-list a:hover{text-decoration:underline}
   </style>
 </head>
 <body>
+<header class="site-hero">
+  <h1>Scarab Medical</h1>
+  <p>Smart Sub-Q Dot — Clinical-Grade Implantable Sensor</p>
+  <nav class="primary">
+    <a href="#subpages">Subpages</a>
+    <a href="#overview">Overview</a>
+  </nav>
+</header>
 
-  <header class="site-hero">
-    <div class="brand">
-      <div class="title">
-        <div class="company">Scarab Medical</div>
-        <div class="tag">Smart Sub-Q Dot — clinical-grade implantable sensing</div>
-      </div>
-      <nav class="primary" aria-label="Primary">
-        <a href="index.html#about">About Us</a>
-        <a href="index.html#sensor">About the Sensor</a>
-        <a href="index.html#technology">Technology</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
+<main>
+  <section id="overview" class="card">
+    <h2>Welcome</h2>
+    <p>This website provides an integrated overview of Scarab Medical and the Smart Sub-Q Dot implantable biosensor. You can explore the full <strong>About Us</strong>, <strong>Sensor</strong>, and <strong>Technology</strong> sections using the subpage links below.</p>
+  </section>
+
+  <section id="subpages" class="card">
+    <h2>Navigate to Subpages</h2>
+    <p>Select a section to explore:</p>
+    <div class="link-list">
+      <a href="about.html">About Us</a>
+      <a href="sensor.html">About the Sensor</a>
+      <a href="technology.html">Technology</a>
     </div>
-  </header>
+  </section>
 
-  <main class="container">
-    <!-- Two column intro -->
-    <div class="grid">
-      <div class="card">
-        <h1 class="h">Why Scarab Medical?</h1>
-        <p class="lead">Scarab Medical develops clinical-grade implantable sensors that capture the data clinicians need — not just consumer trackers. Our Smart Sub-Q Dot is designed to deliver continuous, reliable physiological signals that fit into routine clinical workflows and support early detection of deterioration.</p>
+  <section class="card">
+    <h2>Embedded Subpage Content</h2>
+    <p>The following sections embed the full content of the three subpages for a single-page experience, while the links above provide standalone pages.</p>
+  </section>
 
-        <div class="features">
-          <div class="feature">
-            <h4>Set-and-Forget Design</h4>
-            <p>Office-based implantation, years of life, no charging or daily maintenance.</p>
-          </div>
-          <div class="feature">
-            <h4>Clinical-grade Signals</h4>
-            <p>Built for accuracy, validation and integration into clinician dashboards and EHR.</p>
-          </div>
-          <div class="feature">
-            <h4>Patient-first</h4>
-            <p>No visible bump, MRI-conditional design, minimal lifestyle impact.</p>
-          </div>
-          <div class="feature">
-            <h4>Actionable Alerts</h4>
-            <p>Pattern-based alerts for clinicians — designed to reduce alert fatigue.</p>
-          </div>
-        </div>
+  <!-- ABOUT PAGE CONTENT -->
+  <section id="about" class="card">
+    <h2>About Us — Scarab Medical</h2>
+    <p>Scarab Medical develops clinical-grade implantable sensors addressing major unmet needs such as early heart failure detection, metabolic instability, infection surveillance, and orthopaedic implant monitoring. Our work is grounded in validated sensing, robust in-vivo calibration and clinician-aligned analytics.</p>
+  </section>
 
-        <section id="about" style="margin-top:20px">
-          <h2 style="font-family:'Georgia',serif;color:var(--ink);margin-top:10px">About Us — Scarab Medical</h2>
-          <p style="color:var(--muted)">Scarab Medical is a medtech company focused on delivering validated implantable sensing solutions that address major clinical needs: heart failure decompensation, metabolic instability, infection detection, and post-op monitoring. We combine hardware miniaturisation, robust in-vivo calibration strategies and clinically validated algorithms to ensure relevant, trustworthy data reaches clinicians when it matters.</p>
-        </section>
+  <!-- SENSOR PAGE CONTENT -->
+  <section id="sensor" class="card">
+    <h2>About the Sensor</h2>
+    <p>The Smart Sub-Q Dot is a rice-grain-sized fully implantable micro-sensor designed to deliver continuous, actionable physiological insight with zero maintenance burden.</p>
+    <ul>
+      <li>Office-based 5–10 minute implantation</li>
+      <li>No charging, no patches, no daily tasks</li>
+      <li>Encrypted transmission to patient app + clinician dashboard</li>
+      <li>Configurations: cardiopulmonary, metabolic, ortho/post-op</li>
+    </ul>
+  </section>
 
-      </div>
+  <!-- TECHNOLOGY PAGE CONTENT -->
+  <section id="technology" class="card">
+    <h2>The Technology</h2>
+    <p>The platform combines miniaturised biosensing, multi-year energy strategies, secure wireless communication and cloud-based medical analytics. Designed to reduce alert fatigue and improve early detection of deterioration.</p>
+    <ul>
+      <li>Validated sensing against clinical gold standards</li>
+      <li>Energy harvesting or micro-battery autonomy</li>
+      <li>Encrypted implant → phone → cloud pipeline</li>
+      <li>Clinician-tuned analytics for trustworthy alerts</li>
+    </ul>
+  </section>
 
-      <aside class="card side">
-        <div class="kicker">Trusted by clinicians • Designed for patients</div>
-        <div style="font-size:18px;font-weight:700;color:var(--ink);margin-bottom:8px">Clinical applications</div>
-        <ul style="color:var(--muted);margin:0 0 14px 18px">
-          <li>Heart failure management</li>
-          <li>Perioperative monitoring</li>
-          <li>High-risk diabetes programmes</li>
-          <li>Orthopaedic implant surveillance</li>
-        </ul>
+</main>
 
-        <div class="cta">
-          <a class="btn" href="index.html#contact">Request a Consultation</a>
-          <a style="text-decoration:none;color:var(--muted);font-weight:600" href="index.html#technology">Download whitepaper (coming)</a>
-        </div>
-      </aside>
-    </div>
-
-    <!-- Sensor details -->
-    <section id="sensor" class="sensor">
-      <div class="card sensor-grid">
-        <div>
-          <h2 style="font-family:'Georgia',serif;color:var(--ink)">About the Sensor</h2>
-          <p style="color:var(--muted)">The Smart Sub-Q Dot is a tiny, rice-grain-sized implant designed to measure 2–3 high-value physiological signals continuously. It can be configured for cardiopulmonary, metabolic, or ortho/post-op use and transmits securely to a patient phone and clinician dashboard.</p>
-
-          <h3 style="margin-top:12px;margin-bottom:6px;color:#112">Why this approach?</h3>
-          <ul style="color:var(--muted);margin-left:18px">
-            <li><strong>Low patient burden:</strong> no charging, no daily interaction.</li>
-            <li><strong>Clinical value:</strong> measures signals non-capturable by wearables (local tissue oxygenation, intracardiac trends, local biomarkers).</li>
-            <li><strong>Workflow friendly:</strong> integrates into clinician dashboards and EHR via secure APIs.</li>
-          </ul>
-
-          <h3 style="margin-top:12px;color:#112">Typical configurations</h3>
-          <div style="display:grid;gap:10px;margin-top:8px">
-            <div class="card" style="padding:12px">
-              <strong>Cardiopulmonary</strong>
-              <div style="color:var(--muted);font-size:14px">StO₂ (local tissue oxygenation), local temperature, HR/HRV trends — early detection of HF decompensation and respiratory infections.</div>
-            </div>
-            <div class="card" style="padding:12px">
-              <strong>Metabolic</strong>
-              <div style="color:var(--muted);font-size:14px">Continuous glucose ± lactate and pH — early metabolic instability and sepsis risk signalling.</div>
-            </div>
-            <div class="card" style="padding:12px">
-              <strong>Ortho / Post-Op</strong>
-              <div style="color:var(--muted);font-size:14px">Local temperature, pH, mechanical strain — early prosthetic infection and healing assessment.</div>
-            </div>
-          </div>
-
-        </div>
-
-        <figure class="sensor-figure">
-          <!-- developer-provided image path; update path if deploying elsewhere -->
-          <img src="/mnt/data/7c7ffa83-825b-4a7b-9dbd-0e303599df8d.png" alt="Scarab Smart SubQ Dot concept" />
-        </figure>
-      </div>
-    </section>
-
-    <!-- Technology -->
-    <section id="technology" style="margin-top:26px">
-      <div class="card">
-        <h2 style="font-family:'Georgia',serif;color:var(--ink)">The Technology</h2>
-        <p style="color:var(--muted)">Scarab Medical combines miniaturised sensing, robust in-vivo calibration, and lightweight on-device signal processing to deliver clinically meaningful metrics with minimal patient burden.</p>
-
-        <div class="tech-list" style="margin-top:12px">
-          <div class="tech-item">
-            <div class="dot" aria-hidden></div>
-            <div>
-              <strong>Validated sensing</strong>
-              <div style="color:var(--muted);margin-top:6px">Sensors and algorithms are validated against clinical gold standards to ensure reproducibility across patients and environments.</div>
-            </div>
-          </div>
-
-          <div class="tech-item">
-            <div class="dot" aria-hidden></div>
-            <div>
-              <strong>Energy options</strong>
-              <div style="color:var(--muted);margin-top:6px">Energy harvesting or micro-battery designs provide multi-year lifespan without patient interaction.</div>
-            </div>
-          </div>
-
-          <div class="tech-item">
-            <div class="dot" aria-hidden></div>
-            <div>
-              <strong>Secure connectivity</strong>
-              <div style="color:var(--muted);margin-top:6px">End-to-end encryption from device → phone → cloud; designed for HIPAA / GDPR-aligned workflows.</div>
-            </div>
-          </div>
-
-          <div class="tech-item">
-            <div class="dot" aria-hidden></div>
-            <div>
-              <strong>Clinical analytics</strong>
-              <div style="color:var(--muted);margin-top:6px">Lightweight on-device and cloud models detect trends and reduce false alerts through pattern recognition and clinician feedback loops.</div>
-            </div>
-          </div>
-        </div>
-
-        <hr style="margin:20px 0;border:none;border-top:1px solid #eef3f6">
-        <h3 style="margin:0 0 8px;color:#112">Patient-friendly design principles</h3>
-        <ul style="color:var(--muted);margin-left:18px">
-          <li>Minimise procedures: office-based implant, <em>set-and-forget</em>.</li>
-          <li>Invisible: no visible hardware; MRI conditional.</li>
-          <li>Clinically actionable: only send alerts when patterns indicate true risk.</li>
-        </ul>
-
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" style="margin-top:26px">
-      <div class="card">
-        <h2 style="font-family:'Georgia',serif;color:var(--ink)">Contact</h2>
-        <p style="color:var(--muted)">For partnership inquiries, clinical collaborations or product information, please use the contact form below. (We purposely omit direct email on public pages to minimise spam.)</p>
-
-        <div style="margin-top:18px">
-          <!-- Placeholder — organisation can embed Google Form or contact widget here -->
-          <div style="padding:18px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfcff);border:1px solid #eef5fb">
-            <strong style="display:block;margin-bottom:8px;color:#022">Request a consultation</strong>
-            <p style="color:var(--muted);margin:0 0 8px">Click below to open our secure consultation form.</p>
-            <a class="btn" href="#">Open consultation form</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div style="max-width:1100px;margin:0 auto;padding:10px 20px;text-align:center">
-      <div style="color:var(--muted)">© 2025 Scarab Medical — All rights reserved.</div>
-    </div>
-  </footer>
-
+<footer style="text-align:center;color:var(--muted);padding:20px">
+  © 2025 Scarab Medical — All rights reserved.
+</footer>
 </body>
 </html>
